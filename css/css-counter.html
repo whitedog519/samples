@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>CSS Counter</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      body {
+        counter-reset: hour;
+      }
+      div {
+        border: 1px solid black;
+      }
+      div:after {
+        counter-increment: hour;
+        content: counter(hour)"時";
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
